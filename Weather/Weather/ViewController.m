@@ -95,7 +95,7 @@
     NSString *latitude = [[arrayCities objectAtIndex:indexPath.row] valueForKey:@"lat"];
     NSString *longitude = [[arrayCities objectAtIndex:indexPath.row] valueForKey:@"lng"];
 
-    NSURL *urlFetchWeather = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%@&lon=%@&appid=bd82977b86bf27fb59a04b61b657fb6f",latitude,longitude]];
+    NSURL *urlFetchWeather = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%@&lon=%@&appid=7b5d6ddc887bee6e5a1045a053a2c6d2",latitude,longitude]];
     
     NSData *weatherData = [NSData dataWithContentsOfURL:urlFetchWeather];
     
